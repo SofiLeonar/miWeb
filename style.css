@@ -153,6 +153,24 @@ footer {
     padding: 20px;
 }
 
+.conte-degradado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;  /* Permite hacer clic en la página */
+    z-index: 9999;  /* Se pone por encima de todo */
+    background: none;  /* Inicialmente transparente */
+    display: none;  /* Se oculta por defecto hasta que el switch esté activado */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+
 @media (max-width: 768px) {
     #sobreMi {
         content: url("img/sobreMiCel.png");
