@@ -6,6 +6,18 @@
 }
 
 body{
+    background-image: url('img/papelArrugado.jpg');
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.bodyHome{
     background: 
         url('/img/papelBeige2.png') repeat center center,
         url('/img/fondoIconos20.png') repeat,
@@ -180,6 +192,35 @@ footer {
 .content {
     position: relative;
     z-index: 1;
+}
+
+/* --------------------- Sobremi --------------------- */
+
+.contenidoSobremi {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+    font-family: "Kiwi Maru";
+}
+
+.contenidoSobremi img {
+    transform: rotate(-8deg);
+    height: 500px;
+    padding: 50px;
+}
+
+.celeste {
+    color: #0c7ba4;
+}
+
+.lateral{
+    max-width: 500px;
+}
+.cualidades{
+    margin-top: -100px;
 }
 
 
