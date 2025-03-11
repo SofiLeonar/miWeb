@@ -152,3 +152,43 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    #sobreMi {
+        content: url("img/sobreMiCel.png");
+    }
+    #proyectos {
+        content: url("img/proyectosCel.png");
+    }
+    #arte {
+        content: url("img/arteCel.png");
+    }
+    #contacto {
+        content: url("img/contactoCel.png");
+    }
+    .arcoiris img {
+        height: 200px;
+    }
+    .arcoiris {
+        margin-top: -200px;
+    }
+    nav ul {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    
+    .banner{
+        height: 300px;
+    }
+    .banner-container {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .form-check { 
+        display: none; 
+    }
+}
