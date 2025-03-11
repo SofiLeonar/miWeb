@@ -68,11 +68,25 @@ nav ul li {
 
 nav ul li a:hover {
     color:#6ED6FB;
+    font-size: 1.3rem;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+}
+
+.textonav{
+    color: white;
+    font-family: "Waiting for the Sunrise", cursive;
+    margin-right: 30px; 
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .banner-container {
@@ -159,10 +173,10 @@ footer {
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none;  /* Permite hacer clic en la página */
-    z-index: 9999;  /* Se pone por encima de todo */
-    background: none;  /* Inicialmente transparente */
-    display: none;  /* Se oculta por defecto hasta que el switch esté activado */
+    pointer-events: none;
+    z-index: 9999;
+    background: none;
+    display: none;
 }
 
 .content {
