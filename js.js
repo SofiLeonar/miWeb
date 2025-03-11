@@ -57,3 +57,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("mousemove", actualizarLinterna);
 });
+
+// Espejo
+
+const video = document.getElementById('video');
+const mensaje = document.getElementById('mensaje');
+
+async function iniciarCamara() {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        video.style.display = 'block';
+        mensaje.style.display = 'none';
+    } catch (error) {
+        console.error('Error al acceder a la cámara:', error);
+        mensaje.textContent = 'No se pudo acceder a la cámara.';
+    }
+}
