@@ -27,13 +27,6 @@ body{
         auto,
         400% 400%;
     animation: gradientAnimation 10s infinite alternate;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    text-align: center;
-    position: relative;
 }
 
 main {
@@ -218,9 +211,35 @@ footer {
 
 .lateral{
     max-width: 500px;
+    font-weight: bold;
 }
 .cualidades{
     margin-top: -100px;
+}
+
+.papelrosa{
+    background-color: #fbc9f3;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ef60d7;
+    max-width: 400px;
+    margin: 10px;
+}
+.papelrosa h1{
+    color: #730160;
+    text-align: center;
+}
+
+.papelceleste h1{
+    text-align: center;
+}
+.papelceleste{
+    background-color: #b5edfe;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #2bc1f7;
+    max-width: 400px;
+    margin: 10px;
 }
 
 
@@ -248,12 +267,25 @@ footer {
         margin-bottom: 0;
         padding-left: 0;
     }
-    
     .banner{
         height: 300px;
     }
     .banner-container {
         height: 400px;
+    }
+    .contenidoSobremi{
+        flex-direction: column;
+        padding:0 30px;
+    }
+    .contenidoSobremi img{
+        transform: rotate(0deg);
+        padding: 5px;
+    }
+    .cualidades img{
+        height: 300px;
+    }
+    .cualidades{
+        margin-top: 10px;
     }
 
 }
