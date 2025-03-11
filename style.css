@@ -7,15 +7,13 @@
 
 body{
     background: 
-        url('/img/papelBeige.png') repeat center center,
+        url('/img/papelBeige2.png') repeat center center,
         url('/img/fondoIconos20.png') repeat,
-        linear-gradient(to bottom, #6ed6fb 16%, #9049fe 36%, #a100ff 61%, #e65aff 99%); /* Gradiente de fondo */
-    
+        linear-gradient(to bottom, #6ed6fb 16%, #9049fe 36%, #a100ff 61%, #e65aff 99%);     
     background-size: 
         contain,
         auto,
         400% 400%;
-    
     animation: gradientAnimation 10s infinite alternate;
     height: 100%;
     margin: 0;
@@ -23,6 +21,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 main {
@@ -152,7 +151,6 @@ nav ul li a {
     flex-direction: column;
 }
 .arcoiris {
-    position: absolute;
     margin-top: -440px;
     left: 0;
     width: 100%;
