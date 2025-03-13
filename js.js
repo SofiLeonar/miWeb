@@ -74,3 +74,29 @@ async function iniciarCamara() {
         mensaje.textContent = 'No se pudo acceder a la cámara.';
     }
 }
+
+//Galeria
+
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+var images = document.querySelectorAll('.galeria');
+
+images.forEach(function(img) {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+});
+
+var closeModal = document.getElementById("closeModal");
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
