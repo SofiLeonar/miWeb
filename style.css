@@ -379,6 +379,12 @@ video {
     transition: 0.3s;
     cursor: pointer;
 }
+.disculpa{
+    font-family: kiwi maru;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 @media (max-width: 768px) {
     #sobreMi {

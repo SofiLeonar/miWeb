@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
             conteDegradado.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(244, 248, 153, 0.5) 0%, rgba(0, 0, 0, 0.98) ${sizeDegradado}px)`;
         }
     }
-
     document.addEventListener("mousemove", actualizarLinterna);
 });
 
@@ -100,3 +99,9 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+});
