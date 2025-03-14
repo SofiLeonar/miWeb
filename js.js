@@ -105,3 +105,46 @@ document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
     }
 });
+
+// Contacto
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var formData = new FormData(this);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/enviar.php', true);
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            document.getElementById('respuesta').innerHTML = xhr.responseText;
+
+            if (xhr.responseText.includes("Mensaje enviado correctamente.")) {
+                document.getElementById('contactForm').reset();
+            }
+        } else {
+            document.getElementById('respuesta').innerHTML = 'Ocurrió un error al enviar el mensaje.';
+        }
+    };
+
+    xhr.send(formData);
+});
+
+// Modal celu
+
+document.addEventListener("DOMContentLoaded", function () {
+    function esDispositivoMovil() {
+        return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+    }
+
+    if (esDispositivoMovil()) {
+        let modal = document.getElementById("modalMobile");
+        modal.style.display = "flex";
+
+        document.querySelector(".close").addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+    }
+});
+
+});

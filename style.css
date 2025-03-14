@@ -202,7 +202,7 @@ footer {
     font-family: "Kiwi Maru";
 }
 
-.contenidoSobremi img {
+.contenidoSobremi img, .contacto img {
     transform: rotate(-8deg);
     height: 500px;
     padding: 50px;
@@ -386,12 +386,78 @@ video {
     margin-bottom: 30px;
 }
 
+/* Contacto */
+
+.contacto{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin: auto;
+    font-family: "Kiwi Maru";
+}
+.contacto img{
+    padding: 0;
+    margin: 30px 5px 30px 5px;
+}
+.formularioContacto {
+    background-image: url("/img/papelBeige2.png");
+    padding: 0;
+    background-position: center;
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px; 
+    color: #000000;
+    border-radius: 10px;
+    font-family: kiwi maru;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 5px 0 0px;
+    text-align: left;
+}
+
+
+textarea {
+    resize: none;
+    height: 100px;
+    font-family: kiwi maru !important;
+    text-align: left !important;
+    font-size: 1rem !important;
+}
+
+button {
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    background-color: #a100ff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007fd9;
+    color: white;
+}
+
 @media (max-width: 768px) {
     #sobreMi {
         content: url("img/sobreMiCel.png");
     }
     #proyectos {
         content: url("img/proyectosCel.png");
+        margin-left: -70px;
     }
     #arte {
         content: url("img/arteCel.png");
@@ -400,7 +466,8 @@ video {
         content: url("img/contactoCel.png");
     }
     .arcoiris img {
-        height: 200px;
+        height: auto;
+        max-width: 300px;
     }
     .arcoiris {
         margin-top: -200px;
@@ -435,6 +502,9 @@ video {
         filter: grayscale(0%);
     }
 
+    .contacto img {
+        display: none;
+    }
 }
 
 

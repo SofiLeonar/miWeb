@@ -21,7 +21,7 @@
                     <img src="img/248fec50-5c9c-4bfa-abb2-5e52b431111c.png" alt="Logo" width="50px">
                 </a>
             </div>
-            <div class="menu-icon"></div> 
+            <div class="menu-icon">&#9776;</div> 
             <nav>
                 <ul>
                     <li><a href="sobremi.html">Sobre mi</a></li>
@@ -35,11 +35,39 @@
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
             </div>
         </header>
-
-<h1>Contacto</h1>
+        
+        <section class="seccion">
+            <div class="contacto">
+                <div>
+                    <img src="img/contactoPC.png" alt="Contacto">
+                </div>
+                <div class="formularioContacto container seccion">
+                    <form id="contactForm">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+        
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+                        <label for="Asunto">Asunto</label>
+                        <input id="asunto" name="asunto" placeholder="Asunto"></input required>
+        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea required>
+        
+                        <button type="submit">Enviar</button>
+                        <div id="respuesta"></div> 
+                    </form>
+                </div>
+            </div>
+        </section>
 
     <footer>
         <p>&copy; 2025 Sofia Leonardelli. Todos los derechos reservados.</p>
+        <div class="footercontacto"></div>
     </footer>
     <script src="js.js"></script>
 </body>
