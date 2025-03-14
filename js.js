@@ -147,4 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+//Menu hamburguesa
+document.querySelector(".menu-icon").addEventListener("click", function() {
+    this.classList.toggle("active");
 });
