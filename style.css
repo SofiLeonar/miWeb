@@ -52,14 +52,7 @@ header nav {
 .menu-icon {
     display: none;
 }
-.menu-icon {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    color: #F73081;
-    margin-left: auto;
-    margin-right: 30px;
-}
+
 .logo {
     margin-left: 1%;
     margin: 10px;
@@ -490,6 +483,37 @@ button:hover {
     color: white;
 }
 
+.vermas{
+    padding: 8px;
+    margin-top: 5px;
+    border: solid 1px black;
+    background-color: #00000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.vermas:hover{
+    transform: scale(1.1);
+}
+
+.botonRosa:hover{
+    background-color: #f4009f;
+    color: white;
+    border: none;
+}
+
+.botonCeleste:hover{
+    background-color: #6ed6fb;
+    color: white;
+    border: none;
+}
+
 
 
 
@@ -563,16 +587,16 @@ button:hover {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #70889E;
+        background-color: #1E1E1E;
         width: 200px;
         padding: 0;
         box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
     }
-
-    .menu-icon.active + nav ul {
+    
+    nav ul.show {
         display: flex;
-    }
-
+    }    
+    
 }
 
 
