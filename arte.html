@@ -199,5 +199,54 @@
         <p>&copy; 2025 Sofia Leonardelli. Todos los derechos reservados.</p>
     </footer>
     <script src="js.js"></script>
+    <script>
+        // Espejo
+        const video = document.getElementById('video');
+        const mensaje = document.getElementById('mensaje');
+
+        async function iniciarCamara() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+                video.style.display = 'block';
+                mensaje.style.display = 'none';
+            } catch (error) {
+                console.error('Error al acceder a la cámara:', error);
+                mensaje.textContent = 'No se pudo acceder a la cámara.';
+            }
+        }
+
+        //Galeria
+
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll('.galeria');
+
+        images.forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+
+        var closeModal = document.getElementById("closeModal");
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>

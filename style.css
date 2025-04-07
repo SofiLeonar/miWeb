@@ -49,9 +49,17 @@ header {
 header nav {
     position: relative;
 }
+
+
 .menu-icon {
     display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 30px;
 }
+
 
 .logo {
     margin-left: 1%;
@@ -530,7 +538,9 @@ button:hover {
     }
     #contacto {
         content: url("img/contactoCel.png");
+        margin-bottom: 80px;
     }
+
     .arcoiris img {
         height: auto;
         max-width: 300px;
@@ -572,30 +582,24 @@ button:hover {
         display: none;
     }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        color: #ffffff;
-        margin-left: auto;
-        margin-right: 30px;
-    }
-
     nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #1E1E1E;
+        background-color: #70889E;
         width: 200px;
         padding: 0;
         box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
     }
-    
-    nav ul.show {
+
+    .menu-icon.active + nav ul {
         display: flex;
-    }    
+    }
+    .menu-icon {
+        display: block;
+    }
     
 }
 
