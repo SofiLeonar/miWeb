@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
    
 }
 
@@ -217,6 +218,25 @@ footer {
     padding: 50px;
 }
 
+.iconosRedes{
+    display: flex;
+    align-items: center;
+    
+}
+.iconosRedes a{
+    margin: 0 10px;
+    margin-left: 0;
+    color: #0c7ba4;
+    font-size: 2rem;
+}
+.iconosRedes a p{
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.iconosRedes a:hover{
+    color: #ff01a6; 
+}
+
 .celeste {
     color: #0c7ba4;
 }
@@ -231,11 +251,7 @@ footer {
 
 .papelrosa{
     background-color: #fbc9f3;
-    padding: 10px;
-    border-radius: 10px;
     border: 2px solid #ef60d7;
-    max-width: 400px;
-    margin: 10px;
 }
 .papelrosa h1{
     color: #730160;
@@ -245,13 +261,16 @@ footer {
 .papelceleste h1{
     text-align: center;
 }
-.papelceleste{
-    background-color: #b5edfe;
+.papelceleste, .papelrosa{
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid #2bc1f7;
     max-width: 400px;
     margin: 10px;
+    margin-top: -60px;
+}    
+.papelceleste{
+    background-color: #b5edfe;
+    border: 2px solid #2bc1f7;
 }
 
 /* --------------------- Espejo --------------------- */
@@ -357,6 +376,13 @@ video {
     margin-top: 50px;
     margin-bottom: 100px;
     border: solid 2px #000000;
+}
+
+.abajo{
+    margin-bottom: 30px;
+}
+.abajo:hover{
+    transform: scale(1.1);
 }
 
 .modal {
@@ -520,6 +546,23 @@ button:hover {
     background-color: #6ed6fb;
     color: white;
     border: none;
+}
+
+.iconosRedesFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.iconosRedesFooter a{
+    margin: 0 15px;
+    margin-left: 0;
+    color: white;
+    font-size: 2rem;
+}
+.iconosRedesFooter a:hover{
+    color: #6ED6FB; 
+    transform: scale(1.3);
 }
 
 
